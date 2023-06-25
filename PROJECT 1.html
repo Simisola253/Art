@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Website</title>
+    <style>
+      body {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+      }
+      .art-project {
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        background: linear-gradient(
+          179.4deg,
+          rgb(253, 240, 233) 2.2%,
+          rgb(255, 194, 203) 96.2%
+        );
+
+        border-radius: 10px;
+        color: white;
+        padding: 30px;
+        width: 50%;
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <style>
+      h1 {
+        display: block;
+        text-align: center;
+        color: plum;
+        font-size: 35px;
+        padding: 15px 20px;
+        margin: 30px auto;
+        font-family: monospace;
+        border: 3px solid plum;
+        border-radius: 10px;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        text-decoration: underline;
+      }
+
+      h2 {
+        display: block;
+        text-align: center;
+        color: plum;
+        font-size: 20px;
+        line-height: 48px;
+        margin: 20px;
+        font-family: monospace;
+      }
+
+      h3 {
+        font-family: monospace;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        color: plum;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 0;
+      }
+
+      p {
+        display: block;
+        text-align: center;
+        margin: 30px;
+        font-size: 18px;
+        font-family: monospace;
+        color: plum;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: smaller;
+        text-decoration: underline;
+      }
+      a {
+        text-align: center;
+        font-size: smaller;
+        text-decoration: underline;
+        color: white;
+      }
+      button {
+        background-color: 328px at 2.9% 15%, rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%;
+        display: block;
+        margin: 30px auto;
+        padding: 15px 30px;
+        font-size: 30px;
+        color: plum;
+        border-radius: 30px;
+        border: 1px solid #e7eaf6;
+        box-shadow: 10px 5px 5px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: plum;
+        cursor: pointer;
+        background: white;
+      }
+    </style>
+    <div class="art-project">
+      <h1>I LOVE ART</h1>
+      <strong>
+        <h2>There are different types of Art:</h2>
+      </strong>
+
+      <ul>
+        <li>
+          <h3>Portraits</h3>
+        </li>
+
+        <li>
+          <h3>Cartoons</h3>
+        </li>
+
+        <li>
+          <h3>Architecture</h3>
+        </li>
+
+        <li>
+          <h3>Fine arts</h3>
+        </li>
+
+        <li>
+          <h3>& More!</h3>
+        </li>
+      </ul>
+
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/924/original/7-Tips-to-Finding-Art-Inspiration-Header-1024x649_%281%29.jpg?1686856342"
+        width="400"
+      />
+      <hr />
+      <p>
+        Art is a diverse range of human activity, and resulting product, that
+        involves creative or imaginative talent expressive of technical
+        proficiency, beauty, emotional power, or conceptual ideas.
+      </p>
+      <h4>
+        <a href="https://en.wikipedia.org/wiki/Art">Read on Wikipedia!</a>
+      </h4>
+      <button>TRY ART</button>
+    </div>
+    <p>Coded by Simi Boyejo💗</p>
+  </body>
+  <script>
+    function art() {
+      let art = prompt("What is your favourite type of art?");
+      let draw = prompt("Do you know how to draw or paint?");
+      draw = draw.toLowerCase();
+      let heading = document.querySelector("button");
+
+      if (draw === "Yes") {
+        alert("You should become an artist!🎨");
+      } else {
+        alert("Maybe try practice more?😉");
+      }
+    }
+    let artButton = document.querySelector("button");
+    artButton.addEventListener("click", art);
+  </script>
+</html>
